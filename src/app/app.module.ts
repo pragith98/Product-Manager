@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxsModule } from '@ngxs/store';
 import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductManagementModule } from './product-management/product-management.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     NgxsModule.forRoot(),
     NgxsLoggerPluginModule.forRoot(),
     HttpClientModule,
+    ProductManagementModule
   ],
   providers: [],
   bootstrap: [AppComponent],
